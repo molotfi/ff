@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8" />
+  <title></title>
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <link rel="stylesheet" href="css/styles.css?v=1.0" />
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #3358FF;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.logo {
+    display: inline-block;
+    vertical-align: top;
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+    margin-top: 15px;    /* if you want it vertically middle of the navbar. */
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #337AFF;
+  color: white;
+}
+
+
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: blue;
+   color: white;
+   text-align: center;
+}
+</style>
+</head>
+<body style="background-color: #339CFF; ">
+
+<div class="topnav">
+  <a class="active" href="home.html">Home</a>
+  <a href="games.html">Games</a>
+  <a href="video.html">Videochat</a>
+  <a href="chat.html">chat</a>
+  <a href="pictures.html">Pictures</a>
+  <a href="random.html">Virtual</a>
+  <a href="movie.html">Movieparty</a>
+  <a href="about.html">About</a>
+</div>
+
+<center>
+  
+<h1>Chat</h1>
+</center>
+
+</body>
+<div class="wrapper">
+  <div class="container">
+      <div class="left">
+          <div class="top">
+              <div class="status">
+                  <div class="indicator"></div>
+                  <div class="status-text">connecting...</div>
+                  <div class="settings"> yooo </div>
+              </div>
+              <input id="filter-input" type="text" />
+              <img class="search-icon" src="images/active-search.png" />
+              <div class="compose"></div>
+          </div>
+          <ul class="people">
+              <li class="person active" data-chat="person1">
+                  <img src="images/molotfi.png" alt="" />
+                  <span class="name">Mohammed lotfi</span>
+                  <span class="time">1:09 PM</span>
+                  <span class="preview">To be or not to be...</span>
+              </li>
+              <li class="person active" data-chat="person2">
+                  <img src="images/hamza.png" alt="" />
+                  <span class="name">Hamza Hadda</span>
+                  <span class="time">2:09 PM</span>
+                  <span class="preview">Online</span>
+              </li>
+          </ul>
+          <div class="bottom">
+              <div class="indicator-bottom offline"></div>
+              <div class="go-status">Go Offline</div>
+          </div>
+      </div>
+      <div class="right">
+          <div class="top">
+              <span>To: <span class="name">MO lotfi</span></span>
+          </div>
+          <div class="chat active-chat" data-chat="person1">
+              <div class="conversation-start">
+                  <span>Today, 6:48 AM</span>
+              </div>
+              <div class="bubble me">
+                  Yo wanne play a game together?
+              </div>
+              <div class="bubble you">
+                  Yes lets go!
+              </div>
+          </div>
+          <div class="chat" data-chat="person2">
+              <div class="conversation-start">
+                  <span>Today, 5:38 PM</span>
+              </div>
+              <div class="bubble you">
+                  Yo wanne play a game together?
+              </div>
+              <div class="bubble me">
+                  Yes lets go!
+              </div>
+          </div>
+          <div class="write">
+              <input id="msg-input" placeholder="Type a message" type="text" />
+              <div class="write-link send"></div>
+          </div>
+      </div>
+  </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js" crossorigin="anonymous"></script>
+<script src="js/chat.js"></script>
+<body>
+
+  
+
+
+<!-- <a href="games.html">
+  <img src="button.png" alt="HTML tutorial" style="width:px;height:42px;border:0">
+</a> -->
+
+<div class="footer">
+  <p> Start chatting with your friends and family and stay up to date with eachother!</p>
+</div>
+
+</body>
+</html>
